@@ -19,10 +19,10 @@ axios.get(url)
     });
 
 
-    const logTodo = (id: number, title: string, completed: boolean) => {
-        console.log(`
-            The Todo with ID: ${id}
-            Has a title of: ${title}
-            Is it finished? ${completed}
-        `)
-    }
+const logTodo = (id: number, title: string, completed: boolean) => {
+    console.log(`
+        The Todo with ID: ${id}
+        Has a title of: ${title}
+        Is it finished? ${completed}
+    `)
+}
