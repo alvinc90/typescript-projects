@@ -1,7 +1,14 @@
-export class CustomMap {
-    googleMap: google.maps.Map;
+interface Mappable {
+    location: {
+        lat: number;
+        lng: number;
+    };
+}
 
-    constructor() {
-        
+export class CustomMap {
+    // private googleMap: google.maps.Map;
+
+    constructor(divId: string) {
+        // this.googleMap = new this.googleMap.maps.Map(document.getElementById(divId))
     }
 }
