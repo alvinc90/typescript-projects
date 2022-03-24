@@ -1,24 +1,16 @@
 "use strict";
-var Sorter = /** @class */ (function () {
-    // collection: number[];
-    function Sorter(collection) {
-        this.collection = collection;
-        // this.collection = collection;
-    }
-    Sorter.prototype.sort = function () {
-        var length = this.collection.length;
-        for (var i = 0; i < length; i++) {
-            for (var j = 0; j < length - i - 1; j++) {
-                if (this.collection[j] > this.collection[j + 1]) {
-                    var temp = this.collection[j];
-                    this.collection[j] = this.collection[j + 1];
-                    this.collection[j + 1] = temp;
-                }
-            }
-        }
-    };
-    return Sorter;
-}());
-var sorter = new Sorter([10, 3, -5, 0]);
-sorter.sort();
-console.log(sorter.collection);
+Object.defineProperty(exports, "__esModule", { value: true });
+var NumbersCollection_1 = require("./NumbersCollection");
+var numbersCollection = new NumbersCollection_1.NumbersCollection([10, 3, -5, 0]);
+numbersCollection.sort();
+console.log(numbersCollection.data);
+// const charactersCollection = new CharactersCollection("Xaayb");
+// charactersCollection.sort();
+// console.log(charactersCollection.data);
+// const linkedList = new LinkedList();
+// linkedList.add(500);
+// linkedList.add(-10);
+// linkedList.add(-3);
+// linkedList.add(4);
+// linkedList.sort();
+// linkedList.print();
